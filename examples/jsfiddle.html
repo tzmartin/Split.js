@@ -21,6 +21,12 @@
 
     overflow-y: auto;
     overflow-x: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   .content {
@@ -34,15 +40,6 @@
 
     background-repeat: no-repeat;
     background-position: 50%;
-  }
-
-  .noselect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
   }
 
   .gutter.gutter-horizontal {
@@ -63,12 +60,12 @@
 </head>
 <body>
     <div id="a" class="split split-horizontal">
-      <div id="c" class="split content noselect"></div>
-      <div id="d" class="split content noselect"></div>
+      <div id="c" class="split content"></div>
+      <div id="d" class="split content"></div>
     </div>
     <div id="b" class="split split-horizontal">
-      <div id="e" class="split content noselect"></div>
-      <div id="f" class="split content noselect"></div>
+      <div id="e" class="split content"></div>
+      <div id="f" class="split content"></div>
     </div>
 </body>
 <script src="../split.js"></script>
