@@ -322,6 +322,9 @@ var global = this
                 size = options.sizes[i]
             } else {
                 size = calc + '(' + options.sizes[i] + '% - ' + gutterSize + 'px)'
+                if (isLast) {
+                  size = calc + '(' + options.sizes[i] + '% - ' + (gutterSize+1) + 'px)'
+                }
             }
 
         // IE8 and below
