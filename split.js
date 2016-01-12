@@ -50,7 +50,7 @@ var global = this
     if (typeof options.minSize === 'undefined') options.minSize = 100
     if (typeof options.snapOffset === 'undefined') options.snapOffset = 30
     if (typeof options.direction === 'undefined') options.direction = 'horizontal'
-    if (typeof options.fixed === 'undefined') options.fixed = true
+    if (typeof options.fixed === 'undefined') options.fixed = false
 
     if (options.direction == 'horizontal') {
         dimension = 'width'
@@ -304,7 +304,7 @@ var global = this
                 gutter.className = gutterClass
                 gutter.style[dimension] = options.gutterSize + 'px'
 
-                if (options.fixed) {
+                if (options.fixed === false) {
                   gutter[addEventListener]('mousedown', startDragging.bind(pair))
                   gutter[addEventListener]('touchstart', startDragging.bind(pair))
                 }
