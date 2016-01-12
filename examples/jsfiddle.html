@@ -36,6 +36,15 @@
     background-position: 50%;
   }
 
+  .noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
   .gutter.gutter-horizontal {
     cursor: col-resize;
     background-image: url('../grips/vertical.png');
@@ -54,12 +63,12 @@
 </head>
 <body>
     <div id="a" class="split split-horizontal">
-      <div id="c" class="split content"></div>
-      <div id="d" class="split content"></div>
+      <div id="c" class="split content noselect"></div>
+      <div id="d" class="split content noselect"></div>
     </div>
     <div id="b" class="split split-horizontal">
-      <div id="e" class="split content"></div>
-      <div id="f" class="split content"></div>
+      <div id="e" class="split content noselect"></div>
+      <div id="f" class="split content noselect"></div>
     </div>
 </body>
 <script src="../split.js"></script>
